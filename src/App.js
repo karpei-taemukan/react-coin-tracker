@@ -8,7 +8,7 @@ function App() {
   const [coins, setCoins] = useState([]);
 
   useEffect(()=>{
-  fetch("https://api.coinpaprika.com/v1/tickers?limit=1000")
+  fetch("https://api.coinpaprika.com/v1/tickers?limit=10")
   .then((res) => res.json())
   .then((json) => {
     setCoins(json)
